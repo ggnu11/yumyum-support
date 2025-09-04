@@ -4,6 +4,10 @@ title: 개인정보처리방침
 description: YumYum 앱의 개인정보 수집, 이용, 보관, 파기 등에 관한 정책과 절차를 안내합니다.
 ---
 
+<div class="py-16 lg:py-24">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="prose prose-lg mx-auto">
+
 # 개인정보처리방침
 
 **최종 업데이트: 2024년 1월 1일**
@@ -223,3 +227,8 @@ YumYum(이하 "회사")은 이용자의 개인정보를 중요하게 생각하�
 ---
 
 본 개인정보처리방침은 2024년 1월 1일부터 적용됩니다.
+
+    </div>
+
+  </div>
+</div>

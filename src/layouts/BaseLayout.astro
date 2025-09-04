@@ -1,4 +1,6 @@
 ---
+import logoImage from '../assets/logo.png';
+
 export interface Props {
   title: string;
   description?: string;
@@ -44,7 +46,7 @@ const { site, base } = Astro.site ? { site: Astro.site.href, base: import.meta.e
       <div class="flex justify-between items-center h-16">
         <div class="flex items-center space-x-2">
           <img 
-            src={'src/assets/' + "logo.png"} 
+            src={logoImage.src} 
             alt="YumYum 로고" 
             class="w-8 h-8 object-contain"
           />
@@ -57,14 +59,11 @@ const { site, base } = Astro.site ? { site: Astro.site.href, base: import.meta.e
           <a href={base} class="text-gray-700 hover:text-orange-500 font-medium transition-colors">
             홈
           </a>
-          <a href={base + "faq/"} class="text-gray-700 hover:text-orange-500 font-medium transition-colors">
+          <a href={base + "/faq/"} class="text-gray-700 hover:text-orange-500 font-medium transition-colors">
             FAQ
           </a>
-          <a href={base + "privacy/"} class="text-gray-700 hover:text-orange-500 font-medium transition-colors">
+          <a href={base + "/privacy/"} class="text-gray-700 hover:text-orange-500 font-medium transition-colors">
             개인정보처리방침
-          </a>
-          <a href={base + "terms/"} class="text-gray-700 hover:text-orange-500 font-medium transition-colors">
-            이용약관
           </a>
         </nav>
         
@@ -82,9 +81,8 @@ const { site, base } = Astro.site ? { site: Astro.site.href, base: import.meta.e
       <div class="md:hidden hidden" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1 border-t border-gray-200">
           <a href={base} class="block px-3 py-2 text-gray-700 hover:text-orange-500 font-medium">홈</a>
-          <a href={base + "faq/"} class="block px-3 py-2 text-gray-700 hover:text-orange-500 font-medium">FAQ</a>
-          <a href={base + "privacy/"} class="block px-3 py-2 text-gray-700 hover:text-orange-500 font-medium">개인정보처리방침</a>
-          <a href={base + "terms/"} class="block px-3 py-2 text-gray-700 hover:text-orange-500 font-medium">이용약관</a>
+          <a href={base + "/faq/"} class="block px-3 py-2 text-gray-700 hover:text-orange-500 font-medium">FAQ</a>
+          <a href={base + "/privacy/"} class="block px-3 py-2 text-gray-700 hover:text-orange-500 font-medium">개인정보처리방침</a>
         </div>
       </div>
     </div>
@@ -101,7 +99,7 @@ const { site, base } = Astro.site ? { site: Astro.site.href, base: import.meta.e
       <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
         <div class="flex items-center space-x-2">
           <img 
-            src={'src/assets/' + "logo.png"} 
+            src={logoImage.src} 
             alt="YumYum 로고" 
             class="w-6 h-6 object-contain"
           />
@@ -109,9 +107,8 @@ const { site, base } = Astro.site ? { site: Astro.site.href, base: import.meta.e
         </div>
         
         <div class="flex space-x-6 text-sm text-gray-600">
-          <a href={base + "privacy/"} class="hover:text-orange-500 transition-colors">개인정보처리방침</a>
-          <a href={base + "terms/"} class="hover:text-orange-500 transition-colors">이용약관</a>
-          <a href={base + "faq/"} class="hover:text-orange-500 transition-colors">FAQ</a>
+          <a href={base + "/privacy/"} class="hover:text-orange-500 transition-colors">개인정보처리방침</a>
+          <a href={base + "/faq/"} class="hover:text-orange-500 transition-colors">FAQ</a>
         </div>
         
         <div class="text-sm text-gray-500">
