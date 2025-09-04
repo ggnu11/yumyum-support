@@ -28,8 +28,8 @@ import logoImage from '../assets/logo.png';
         </h1>
         
         <p class="text-xl lg:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-          맛있는 순간을 공유하세요<br />
-          <span class="text-gray-600">음식 사진과 리뷰로 소통하는 소셜 플랫폼</span>
+          나만의 맛집 다이어리, 지금 시작하세요<br />
+          <span class="text-gray-600">내가 직접 찾은 맛집을 손쉽게 기록하고 관리하는 개인 맛집 노트</span>
         </p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -62,52 +62,218 @@ import logoImage from '../assets/logo.png';
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-          왜 YumYum을 선택해야 할까요?
+          YumYum의 주요 기능
         </h2>
         <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-          음식을 사랑하는 모든 사람들을 위한 특별한 기능들을 만나보세요
+          위치, 방문 날짜, 평점, 사진, 메모까지 한눈에 정리하여 나만의 맛집 노트를 만들어보세요
         </p>
       </div>
       
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Feature 1 -->
+        <!-- Feature 1: 위치 기반 등록 -->
         <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
           <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center mx-auto mb-4">
             <svg class="w-8 h-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">위치 기반 등록</h3>
+          <p class="text-gray-600">
+            지도에서 원하는 위치를 꾹 누르면 핀이 생성되고, + 버튼으로 맛집을 쉽게 등록할 수 있습니다
+          </p>
+        </div>
+        
+        <!-- Feature 2: 사진과 메모 기록 -->
+        <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-pink-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">간편한 사진 업로드</h3>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">사진과 메모 기록</h3>
           <p class="text-gray-600">
-            맛있는 음식 사진을 간단하게 업로드하고 친구들과 공유하세요
+            방문 당시의 맛과 분위기를 사진과 메모로 생생하게 남겨 소중한 순간을 간직하세요
           </p>
         </div>
         
-        <!-- Feature 2 -->
-        <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
-          <div class="w-16 h-16 bg-pink-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-            <svg class="w-8 h-8 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">정확한 리뷰 시스템</h3>
-          <p class="text-gray-600">
-            5점 만점 평점과 상세한 리뷰로 신뢰할 수 있는 맛집 정보를 제공합니다
-          </p>
-        </div>
-        
-        <!-- Feature 3 -->
+        <!-- Feature 3: 평점 및 마커 선택 -->
         <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
           <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
             <svg class="w-8 h-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">소셜 네트워킹</h3>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">평점 및 마커 선택</h3>
           <p class="text-gray-600">
-            같은 취향의 사람들을 팔로우하고 개인화된 맛집 추천을 받아보세요
+            별점과 감정 마커로 나의 취향에 따라 맛집을 분류하고 관리할 수 있습니다
           </p>
+        </div>
+
+        <!-- Feature 4: 즐겨찾기 기능 -->
+        <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">즐겨찾기 기능</h3>
+          <p class="text-gray-600">
+            자주 찾는 맛집을 별표로 표시하여 별도로 모아 빠르게 확인할 수 있습니다
+          </p>
+        </div>
+
+        <!-- Feature 5: 캘린더 연동 -->
+        <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">캘린더 연동</h3>
+          <p class="text-gray-600">
+            저장한 맛집 방문 일정을 캘린더에서 바로 확인하고 관리할 수 있습니다
+          </p>
+        </div>
+
+        <!-- Feature 6: 다크 모드 지원 -->
+        <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">다크 모드 지원</h3>
+          <p class="text-gray-600">
+            상황에 맞게 밝기와 분위기를 전환하여 언제든 편안하게 앱을 사용할 수 있습니다
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usage Guide Section -->
+  <section class="py-16 lg:py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          YumYum 사용 가이드
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          간단한 몇 단계로 나만의 맛집 다이어리를 시작해보세요
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left: Usage Steps -->
+        <div class="space-y-8">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
+              1
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">맛집 등록하기</h3>
+              <p class="text-gray-600">지도 화면에서 원하는 위치를 꾹 누르면 핀이 생성됩니다. 화면 오른쪽 + 버튼을 눌러 맛집을 등록하세요.</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-pink-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
+              2
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">상세 정보 입력</h3>
+              <p class="text-gray-600">방문 날짜, 제목, 내용, 마커, 평점, 사진 등을 등록하여 맛집에 대한 자세한 기록을 남겨보세요.</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
+              3
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">맛집 관리하기</h3>
+              <p class="text-gray-600">저장한 맛집은 피드와 캘린더에서 확인 가능하며, 즐겨찾기로 설정하여 빠르게 접근할 수 있습니다.</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
+              4
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">편집 및 검색</h3>
+              <p class="text-gray-600">피드에서 맛집 정보를 수정하거나, 검색 기능으로 등록된 맛집을 이름으로 빠르게 찾을 수 있습니다.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right: Key Features Highlight -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">핵심 기능</h3>
+          
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <span class="text-gray-700">지도 기반 위치 등록</span>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+              <div class="w-6 h-6 bg-pink-100 rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <span class="text-gray-700">사진 및 메모 첨부</span>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+              <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <span class="text-gray-700">별점 및 감정 마커</span>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+              <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <span class="text-gray-700">즐겨찾기 관리</span>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+              <div class="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <span class="text-gray-700">캘린더 연동</span>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+              <div class="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <span class="text-gray-700">다크 모드 지원</span>
+            </div>
+          </div>
+          
+          <div class="mt-8 text-center">
+            <p class="text-sm text-gray-500 italic">
+              "소중한 순간이 모여, 나만의 맛집 지도가 완성됩니다."
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -117,10 +283,10 @@ import logoImage from '../assets/logo.png';
   <section class="py-16 lg:py-24 bg-gradient-to-r from-orange-400 to-pink-500">
     <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
-        지금 바로 YumYum과 함께하세요
+        특별한 식사 경험을 간직하세요
       </h2>
       <p class="text-xl text-orange-100 mb-8">
-        무료로 시작하고, 맛있는 순간들을 공유해보세요
+        나만의 맛집 다이어리를 지금 바로 시작하고, 소중한 순간들을 기록해보세요
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a 
