@@ -34,7 +34,7 @@ const { site, base } = Astro.site ? { site: Astro.site.href, base: import.meta.e
   <meta property="twitter:image" content={site + base + ogImage.replace(/^\//, '')} />
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href={'public/' + "favicon.ico"} />
+  <link rel="icon" type="image/svg+xml" href={base + "favicon.svg"} />
   
   <!-- Canonical URL -->
   <link rel="canonical" href={site + Astro.url.pathname} />
