@@ -1,46 +1,24 @@
-# Astro Starter Kit: Basics
+# YumYum Support
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+YumYum 맛집 다이어리 앱의 공식 지원 사이트입니다.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **사이트**: https://ggnu11.github.io/yumyum-support
+- **프레임워크**: Astro + React + Tailwind CSS
+- **배포**: GitHub Pages (GitHub Actions)
 
-## 🚀 Project Structure
+## 페이지 구성
 
-Inside of your Astro project, you'll see the following folders and files:
+| 페이지 | 경로 | 설명 |
+|--------|------|------|
+| 홈 | `/` | 앱 소개, 주요 기능, 사용 가이드 |
+| FAQ | `/faq/` | 자주 묻는 질문과 답변 |
+| 개인정보처리방침 | `/privacy/` | 개인정보 수집 및 이용 정책 |
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## 명령어
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| 명령어 | 설명 |
+|--------|------|
+| `pnpm install` | 의존성 설치 |
+| `pnpm dev` | 로컬 개발 서버 실행 (`localhost:4321`) |
+| `pnpm build` | 프로덕션 빌드 (`./dist/`) |
+| `pnpm preview` | 빌드 결과 미리보기 |
